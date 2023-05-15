@@ -38,7 +38,7 @@ En este [enlace](https://public.tableau.com/app/profile/augusto.abad/viz/Festiva
 ## Storytelling:<a name="story"/>
 
 <details>
-<summary>Festivales y Artistas</summary>
+<summary><ins><b>Festivales y Artistas</b></ins></summary>
 <br>
 
  ![pag1](./images/pag1.png)
@@ -55,7 +55,7 @@ Tanto el mapa como el gráfico es interactivo y podemos ir explorando tanto arti
 <br>
 
 <details>
-<summary>Popularidad por artista</summary>
+<summary><ins><b>Popularidad por artista</b></ins></summary>
 <br>
 
  ![pag2](./images/pag2.png)
@@ -74,7 +74,7 @@ En ambos gráficos podemos observar una línea horizontal que indica la mediana 
 <br>
 
 <details>
-<summary>Danceability, Tempo y Valence por artista</summary>
+<summary><ins><b>Danceability, Tempo y Valence por artista</b></ins></summary>
 <br>
 
  ![pag3](./images/pag3.gif)
@@ -102,7 +102,7 @@ Si navegamos por cada cluster, vemos que la media de cada métrica no varía muc
 <br>
 
 <details>
-<summary>Popularidad y Energy por artista</summary>
+<summary><ins><b>Popularidad y Energy por artista</b></ins></summary>
 <br>
 
  ![pag4](./images/pag4.gif)
