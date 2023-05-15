@@ -29,4 +29,6 @@ Realizaremos el proceso siguiendo los siguientes pasos:
 
 ## Visualización:<a name="visualizacion"/>
 
-La información obtenida en los dos procesos de extracción 
+La información obtenida en los dos procesos de extracción se ha cargado a una base de datos de Mongo. El proceso de visualización lo realizaremos en Tableau, para poder usar los datos, debemos [exportarlos](https://github.com/gusavato/4_IRONHACK_Visualization/tree/main/data/db_mongo) en formato .json
+
+En este [enlace](https://public.tableau.com/app/profile/augusto.abad/viz/Festivales_16841034848740/ArtistasVsFestivales) se puede ver las distintas tablas y gráficos que se han realizado. En el siguiente apartado se analizará la información que se puede observar.
