@@ -4,6 +4,30 @@ de Data Analytics de IRONHACK de Abril - 2023
 """
 import time
 import requests as rq
+from .password import *
+
+
+def get_coordinates(x):
+    """
+    Función que dada una query, se envía la query a google maps, y recoge
+    la información de latitud y logintud
+
+    """
+    global API_KEY_GOOGLE
+    address = x.replace(' ', '%20')
+    url = f'https://maps.googleapis.com/maps/api/geocode/json?\
+            address={address}&key={API_KEY_GOOGLE}'
+    try:
+        response = rq.get(url)
+        lat, long = response.json(
+        )['results'][0]['geometry']['location'].values()
+        country = response.json(
+        )['results'][0]['address_components'][-2]['long_name']
+        return {'Coordenadas': {'Latitud': lat,
+                                'Longitud': long}}
+    except:
+        return {'Coordenadas': {'Latitud': None,
+                                'Longitud': None}}
 
 
 def get_top_10_tracks(art_url, headers):  # recibe diccionario key:artista
@@ -51,7 +75,8 @@ def get_audio_feautures(lst_tracks, headers):  # recibe diccionario key:artista
     response = rq.get(url, headers)
     return response.json()
 
-def def get_audio_analysis(track_id, headers):  # recibe diccionario key:artista
+
+def get_audio_analysis(track_id, headers):  # recibe diccionario key:artista
 
     # Pausamos el tiempo entre consultas. Evitamos que nos baneen
     time.sleep(0.11)
